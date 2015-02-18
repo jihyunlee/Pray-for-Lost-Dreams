@@ -1,0 +1,31 @@
+{
+  "name": "Pray-for-Lost-Dreams",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "http://hellojihyun.com",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jihyunlee/Pray-for-Lost-Dreams"
+  },
+  "bugs": {
+    "url": "https://github.com/jihyunlee/Pray-for-Lost-Dreams/issues"
+  },
+  "author": {
+    "name": "Jihyun Lee",
+    "email": "jihyun.lee@nyu.edu"
+  },
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "express": "~4.9.x",
+    "ws": "0.4.x",
+    "twit": "latest"
+  },
+  "engines": {
+    "node": "0.10.x"
+  },
+  "keywords": [],
+  "license": "MIT"
+}

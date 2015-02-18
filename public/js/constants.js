@@ -1,0 +1,306 @@
+/**
+	An array of yellowish colors for balloons
+	*/
+var BALLOON_COLORS = [
+  "#ffb300", "#ffc107", "#ffca28", "#ffd54f", "#ffe082", "#ffecb3", "#fff8e1"
+];
+
+/**
+	balloons
+	*/
+var minRadius = 11;
+var maxRadius = 14;
+var minStringLen = 30;
+var maxStringLen = 250;
+var BALLOON_STRING_STEM_LENGTH = 20;
+var BALLOON_ANCHOR_POSITIONS = [{
+  minPosX: 1,
+  maxPosX: 2,
+  minPosY: 53,
+  maxPosY: 70
+}, {
+  minPosX: 2,
+  maxPosX: 3,
+  minPosY: 45,
+  maxPosY: 70
+}, {
+  minPosX: 3,
+  maxPosX: 4,
+  minPosY: 39,
+  maxPosY: 70
+}, {
+  minPosX: 4,
+  maxPosX: 5,
+  minPosY: 34,
+  maxPosY: 70
+}, {
+  minPosX: 5,
+  maxPosX: 6,
+  minPosY: 30,
+  maxPosY: 70
+}, {
+  minPosX: 6,
+  maxPosX: 7,
+  minPosY: 26,
+  maxPosY: 70
+}, {
+  minPosX: 7,
+  maxPosX: 8,
+  minPosY: 24,
+  maxPosY: 70
+}, {
+  minPosX: 8,
+  maxPosX: 9,
+  minPosY: 21,
+  maxPosY: 70
+}, {
+  minPosX: 9,
+  maxPosX: 10,
+  minPosY: 19,
+  maxPosY: 70
+}, {
+  minPosX: 10,
+  maxPosX: 11,
+  minPosY: 17,
+  maxPosY: 70
+}, {
+  minPosX: 11,
+  maxPosX: 12,
+  minPosY: 16,
+  maxPosY: 70
+}, {
+  minPosX: 12,
+  maxPosX: 13,
+  minPosY: 14,
+  maxPosY: 70
+}, {
+  minPosX: 13,
+  maxPosX: 14,
+  minPosY: 13,
+  maxPosY: 70
+}, {
+	minPosX: 14,
+	maxPosX: 15,
+	minPosY: 12,
+	maxPosY: 70
+}, {
+	minPosX: 15,
+	maxPosX: 17,
+	minPosY: 11,
+	maxPosY: 70
+}, {
+	minPosX: 17,
+	maxPosX: 26,
+	minPosY: 10,
+	maxPosY: 70
+}, {
+	minPosX: 26,
+	maxPosX: 33,
+	minPosY: 11,
+	maxPosY: 70
+}, {
+	minPosX: 33,
+	maxPosX: 34,
+	minPosY: 10,
+	maxPosY: 70
+}, {
+	minPosX: 34,
+	maxPosX: 35,
+	minPosY: 8,
+	maxPosY: 70
+}, {
+	minPosX: 36,
+	maxPosX: 37,
+	minPosY: 10,
+	maxPosY: 70
+}, {
+	minPosX: 37,
+	maxPosX: 38,
+	minPosY: 13,
+	maxPosY: 70
+}, {
+	minPosX: 38,
+	maxPosX: 40,
+	minPosY: 14,
+	maxPosY: 70
+}, {
+	minPosX: 40,
+	maxPosX: 48,
+	minPosY: 15,
+	maxPosY: 70
+}, {
+	minPosX: 48,
+	maxPosX: 49,
+	minPosY: 14,
+	maxPosY: 70
+}, {
+	minPosX: 49,
+	maxPosX: 50,
+	minPosY: 13,
+	maxPosY: 70
+}, {
+	minPosX: 50,
+	maxPosX: 51,
+	minPosY: 12,
+	maxPosY: 70
+}, {
+	minPosX: 51,
+	maxPosX: 52,
+	minPosY: 11,
+	maxPosY: 70
+}, {
+	minPosX: 52,
+	maxPosX: 53,
+	minPosY: 10,
+	maxPosY: 70
+}, {
+	minPosX: 53,
+	maxPosX: 55,
+	minPosY: 9,
+	maxPosY: 70
+}, {
+	minPosX: 55,
+	maxPosX: 58,
+	minPosY: 8,
+	maxPosY: 70
+}, {
+	minPosX: 58,
+	maxPosX: 59,
+	minPosY: 7,
+	maxPosY: 70
+}, {
+	minPosX: 59,
+	maxPosX: 60,
+	minPosY: 8,
+	maxPosY: 70
+}, {
+	minPosX: 60,
+	maxPosX: 63,
+	minPosY: 9,
+	maxPosY: 70
+}, {
+	minPosX: 63,
+	maxPosX: 64,
+	minPosY: 4,
+	maxPosY: 70
+}, {
+	minPosX: 64,
+	maxPosX: 66,
+	minPosY: 1,
+	maxPosY: 70
+}, {
+	minPosX: 66,
+	maxPosX: 67,
+	minPosY: 5,
+	maxPosY: 70
+}, {
+	minPosX: 67,
+	maxPosX: 69,
+	minPosY: 7,
+	maxPosY: 70
+}, {
+	minPosX: 69,
+	maxPosX: 70,
+	minPosY: 9,
+	maxPosY: 70
+}, {
+	minPosX: 70,
+	maxPosX: 72,
+	minPosY: 10,
+	maxPosY: 70
+}, {
+	minPosX: 72,
+	maxPosX: 73,
+	minPosY: 11,
+	maxPosY: 70
+}, {
+	minPosX: 73,
+	maxPosX: 74,
+	minPosY: 12,
+	maxPosY: 70
+}, {
+	minPosX: 74,
+	maxPosX: 76,
+	minPosY: 12,
+	maxPosY: 70
+}, {
+	minPosX: 76,
+	maxPosX: 79,
+	minPosY: 14,
+	maxPosY: 70
+}, {
+	minPosX: 79,
+	maxPosX: 80,
+	minPosY: 12,
+	maxPosY: 70
+}, {
+	minPosX: 80,
+	maxPosX: 82,
+	minPosY: 13,
+	maxPosY: 70
+}, {
+	minPosX: 82,
+	maxPosX: 83,
+	minPosY: 14,
+	maxPosY: 70
+}, {
+	minPosX: 83,
+	maxPosX: 85,
+	minPosY: 15,
+	maxPosY: 70
+}, {
+	minPosX: 85,
+	maxPosX: 86,
+	minPosY: 16,
+	maxPosY: 70
+}, {
+	minPosX: 86,
+	maxPosX: 89,
+	minPosY: 17,
+	maxPosY: 70
+}, {
+	minPosX: 89,
+	maxPosX: 90,
+	minPosY: 19,
+	maxPosY: 70
+}, {
+	minPosX: 90,
+	maxPosX: 91,
+	minPosY: 20,
+	maxPosY: 70
+}, {
+	minPosX: 91,
+	maxPosX: 93,
+	minPosY: 21,
+	maxPosY: 70
+}, {
+	minPosX: 93,
+	maxPosX: 94,
+	minPosY: 27,
+	maxPosY: 70
+}, {
+	minPosX: 94,
+	maxPosX: 95,
+	minPosY: 29,
+	maxPosY: 70
+}, {
+	minPosX: 95,
+	maxPosX: 96,
+	minPosY: 31,
+	maxPosY: 70
+}, {
+	minPosX: 96,
+	maxPosX: 97,
+	minPosY: 32,
+	maxPosY: 42
+}, {
+	minPosX: 97,
+	maxPosX: 98,
+	minPosY: 33,
+	maxPosY: 36
+}, {
+	minPosX: 98,
+	maxPosX: 100,
+	minPosY: 70,
+	maxPosY: 70
+}];

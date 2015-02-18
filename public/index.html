@@ -1,0 +1,127 @@
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, user-scalable=no">
+  <title>Pray for the lost dreams on April 16th, 2014</title>
+  <link rel="stylesheet" type="text/css" href="css/reset.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="vendor/jquery/jquery.mobile-1.0.min.css">
+  <link rel="stylesheet" type="text/css" href="vendor/font-awesome-4.3.0/css/font-awesome.min.css">
+  <script>
+  (function() {
+
+    // 1. Inject CSS which makes iframe invisible
+    var div = document.createElement('div'),
+      ref = document.getElementsByTagName('base')[0] ||
+      document.getElementsByTagName('script')[0];
+
+    div.innerHTML = '&shy;<style> iframe { visibility: hidden; } </style>';
+
+    ref.parentNode.insertBefore(div, ref);
+
+    // 2. When window loads, remove that CSS, making iframe visible again
+    window.onload = function() {
+      div.parentNode.removeChild(div);
+    }
+  })();
+  </script>
+</head>
+
+<body>
+  <div id="master">
+    <img id="bottom" class="background" src="img/bottom.png">
+    <canvas id="canvas" class="background"></canvas>
+    <img id="top" class="background" src="img/top.png">
+    <div id="link-title" class="link">Pray at</div>
+    <div id="link-url" class="link">bit.ly/yellowballoons</div>
+    <div id="side-bar">
+      <div id="project-title">
+        <span class="ribbon"><img src="img/ribbon.png"></span>
+        <span class="large">P</span>RAY FOR LOST DREAMS</div>
+      <div id="follow-twitter">
+        <a href="http://twitter.com/wishballoons" target="_blank">
+          <span class="fa-stack">
+            <i class="fa fa-twitter fa-stack-2x"></i>
+          </span> Follow @wishballoons
+        </a>
+      </div>
+      <div id="tweet-box">
+        <div id="prayers-made">
+          <span id="people"></span> prayers have been made.
+        </div>
+        <ul id="tweets">
+          <li class="tweet">
+            <span class="ribbon"><img src="img/ribbon.png"></span>
+            <span id="tweet1" class="truncate"></span>
+          </li>
+          <li class="tweet">
+            <span class="ribbon"><img src="img/ribbon.png"></span>
+            <span id="tweet2" class="truncate"></span>
+          </li>
+          <li class="tweet">
+            <span class="ribbon"><img src="img/ribbon.png"></span>
+            <span id="tweet3" class="truncate"></span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div id="wisher">
+    <div data-role="page" id="page-title" class='page'>
+      <img id="title" src="img/title.png">
+      <img id="start" src="img/start.png">
+    </div>
+    <div data-role="page" id="page-desc" class='page'>
+      <div id="desc" class="desc">In the early morning of 16 April 2014, 6,825-ton South Korean ferry Sewol en route from Incheon to Jeju island capsized and sunk into the Yellow sea.</div>
+      <img class="dot" src="img/dot1.png">
+    </div>
+    <div data-role="page" id="page-desc2" class='page'>
+      <div id="desc2" class="desc">476 people were on board, <b>mostly students from Danwon High School on a school trip</b>; and of those, 172 were rescued, 295 died, and 9 are still missing.</div>
+      <img class="dot" src="img/dot2.png">
+    </div>
+    <div data-role="page" id="page-wish" class='page'>
+      <form id="form" method="post">
+        <label for="tweet">I wish...</label>
+        <span id="char-counter" class="counter"></span>
+        <textarea id="tweet-text" placeholder="Tap here to share your pray for the young souls that lost their dreams."></textarea>
+      </form>
+      <img id="pray" src="img/prayD.png">
+      <img class="dot" src="img/dot3.png">
+    </div>
+    <div data-role="page" id="page-thankyou" class='page'>
+      <img id="yellow-ribbon" src="img/ribbon.png">
+      <div>Thank you for your prayers.</div>
+      <div id="twitter-wishballoon">@wishballoons</div>
+      <div id="footer-link">For more stories, visit<br/>
+        <a href="http://koreanferrydisaster.com/">koreanferrydisaster.com</a>
+      </div>
+    </div>
+  </div>
+  <div id="orientation">Please rotate your device to portrait mode.</div>
+  <div id="phone">
+    <div class="screen"></div>
+  </div>
+
+  <script src="vendor/jquery/jquery-1.11.2.min.js"></script>
+  <script src="vendor/jquery/jquery.mobile-1.4.5.min.js"></script>
+  <script src="vendor/dotdotdot/jquery.dotdotdot.min.js"></script>
+  <script src="vendor/dotdotdot/charCount.js"></script>
+  <script src="vendor/box2d-html/box2d-html5.js"></script>
+  <script src="vendor/box2d-html/box2d-helper.js"></script>
+  <script src="vendor/stats/stats.min.js"></script>
+
+  <script src="js/constants.js"></script>
+  <script src="js/wisherInit.js"></script>
+  <script src="js/wisher.js"></script>
+  <script src="js/masterInit.js"></script>
+  <script src="js/Seabed.js"></script>
+  <script src="js/Ferry.js"></script>
+  <script src="js/PullingString.js"></script>
+  <script src="js/mathHelper.js"></script>
+  <script src="js/Particle.js"></script>
+  <script src="js/ChainString.js"></script>
+  <script src="js/Balloon.js"></script>
+  <script src="js/socket.js"></script>
+</body>
+
+</html>

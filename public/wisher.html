@@ -1,0 +1,51 @@
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, user-scalable=no">
+  <title>Pray for the lost dreams on April 16th, 2014</title>
+  <link rel="stylesheet" type="text/css" href="css/reset.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="vendor/jquery/jquery.mobile-1.0.min.css">
+</head>
+
+<body>
+  <div data-role="page" id="page-title" class='page'>
+    <img id="title" src="img/title.png">
+    <img id="start" src="img/start.png">
+  </div>
+  <div data-role="page" id="page-desc" class='page'>
+    <div id="desc" class="desc">In the early morning of 16 April 2014, 6,825-ton South Korean ferry Sewol en route from Incheon to Jeju island capsized and sunk into the Yellow sea.</div>
+    <img class="dot" src="img/dot1.png">
+  </div>
+  <div data-role="page" id="page-desc2" class='page'>
+    <div id="desc2" class="desc">476 people were on board, <b>mostly students from Danwon High School on a school trip</b>; and of those, 172 were rescued, 295 died, and 9 are still missing.</div>
+    <img class="dot" src="img/dot2.png">
+  </div>
+  <div data-role="page" id="page-wish" class='page'>
+    <form id="form" method="post">
+      <label for="tweet">I wish...</label>
+      <span id="char-counter" class="counter"></span>
+      <textarea id="tweet-text" placeholder="Tap here to share your pray for the young souls that lost their dreams."></textarea>
+    </form>
+    <img id="pray" src="img/prayD.png">
+    <img class="dot" src="img/dot3.png">
+  </div>
+  <div data-role="page" id="page-thankyou" class='page'>
+    <img id="yellow-ribbon" src="img/ribbon.png">
+    <div>Thank you for your prayers.</div>
+    <div id="twitter-wishballoon">@wishballoons</div>
+    <div id="footer-link">For more stories, visit<br/>
+      <a href="http://koreanferrydisaster.com/">koreanferrydisaster.com</a>
+    </div>
+  </div>
+
+  <script src="vendor/jquery/jquery-1.11.2.min.js"></script>
+  <script src="vendor/jquery/jquery.mobile-1.4.5.min.js"></script>
+  <script src="vendor/dotdotdot/jquery.dotdotdot.min.js"></script>
+  <script src="vendor/dotdotdot/charCount.js"></script>
+
+  <script src="js/wisher.js"></script>
+  <script src="js/socket.js"></script>
+</body>
+
+</html>
