@@ -1,7 +1,7 @@
 var scale = 1.0;
 var screenWidth = 1920;
 var screenHeight = 1080;
-
+/*
 if (window.innerWidth != screenWidth || window.innerHeight != screenHeight) {
   if ((screenWidth / screenHeight) > (window.innerWidth / window.innerHeight))
     scale = window.innerWidth / screenWidth;
@@ -13,7 +13,7 @@ if (window.innerWidth != screenWidth || window.innerHeight != screenHeight) {
 
   scaleGui();
 }
-
+*/
 function scaleGui() {
   var fontSize, pxIndex, top, topIndex,
     left, leftIndex, right, rightIndex,
@@ -172,7 +172,7 @@ function masterInit() {
   top.css('height', screenHeight);
 
   var ferryOffsetX = screenWidth * 0.15;
-  var ferryOffsetY = screenHeight;
+  var ferryOffsetY = screenHeight * 0.99;
   var ferryWidth = screenWidth * 0.625;
   var ferryHeight = screenHeight * 0.32;
 
