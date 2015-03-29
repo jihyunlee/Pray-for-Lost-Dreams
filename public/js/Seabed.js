@@ -19,7 +19,7 @@ Bound.prototype.draw = function() {
   var pos = this.body.GetWorldCenter();
   ctx.translate(pos.x, pos.y);
   ctx.rotate(this.body.GetAngleRadians());
-  ctx.fillStyle = '#ffffff';
+  ctx.fillStyle = '#F36E5D';
   ctx.fillRect(-this.width / 2, -this.height / 2, this.width, this.height);
   ctx.restore();
 }

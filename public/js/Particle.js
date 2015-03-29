@@ -18,7 +18,7 @@ Particle.prototype.draw = function() {
   ctx.translate(this.x, this.y);
   ctx.beginPath();
   ctx.ellipse(0, 0, 3, 3, 0, 0, Math.PI * 2);
-  ctx.fillStyle = '#00FFFF';
+  ctx.fillStyle = '#01FFFF';
   ctx.fill();
   ctx.restore();
 }

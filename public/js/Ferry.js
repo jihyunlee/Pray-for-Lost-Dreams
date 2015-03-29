@@ -30,7 +30,7 @@ Ferry.prototype.draw = function() {
   ctx.translate(parseInt(pos.x), parseInt(pos.y));
   ctx.rotate(this.body.GetAngleRadians());
   if (debug) {
-    ctx.fillStyle = '#00ff00';
+    ctx.fillStyle = '#73D4AB';
     ctx.fillRect(-this.width / 2, -this.height / 2, this.width, this.height);
   }
   ctx.drawImage(this.img, -this.width / 2, -this.height / 2, this.width, this.height);
