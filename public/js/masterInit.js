@@ -131,14 +131,16 @@ function render() {
   world.Step(timestamp, 10, 10);
   world.ClearForces();
 
-  ferry.draw();
+
   if (debug) {
-    seabed.draw();
-    leftWall.draw();
-    rightWall.draw();
-    leftChain.draw();
-    rightChain.draw();
-  }
+    // seabed.draw();
+    // leftWall.draw();
+    // rightWall.draw();
+    // leftChain.draw();
+    // rightChain.draw();
+    world.SetDebugDraw(true);
+  } else 
+    ferry.draw();
 
   var pos = ferry.body.GetWorldCenter();
 
